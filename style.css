@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+.logo img {
+  width: 130px;
+}
+
+nav a {
+  margin-left: 25px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #1e293b, #020617);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #aaa;
+}
+
+.btn {
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: #38bdf8;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 100px 60px;
+  gap: 50px;
+}
+
+.about img {
+  width: 420px;
+  border-radius: 15px;
+}
+
+/* SERVICES */
+.services {
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* GLASS CARDS */
+.card {
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 15px;
+  width: 260px;
+  transition: 0.4s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 0 30px rgba(56,189,248,0.3);
+}
+
+.card i {
+  width: 40px;
+  height: 40px;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
